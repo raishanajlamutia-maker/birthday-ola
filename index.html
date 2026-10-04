@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Ola — 8 Years of Friendship 💌</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'DM Sans',sans-serif;
+    color:white;
+    background:#080b1b;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:70px 22px;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.bg{
+    position:fixed;
+    inset:0;
+    z-index:-5;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #263d6b 0,
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 75%,
+            #633b67 0,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #070a18,
+            #101a38 48%,
+            #24132d
+        );
+}
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-2;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+
+    background:white;
+    border-radius:50%;
+
+    opacity:.7;
+
+    animation:
+        twinkle 2.5s infinite alternate;
+}
+
+@keyframes twinkle{
+
+    to{
+        opacity:.15;
+        transform:scale(.5);
+    }
+
+}
+
+/* =========================
+   NAV
+========================= */
+
+.nav{
+    position:fixed;
+
+    top:18px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:20;
+
+    padding:10px 14px;
+
+    border:1px solid #ffffff22;
+
+    border-radius:30px;
+
+    background:#0b1025aa;
+
+    backdrop-filter:blur(12px);
+
+    font-size:12px;
+
+    color:#dce3ff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    text-align:center;
+}
+
+.kicker{
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:11px;
+
+    color:#bfcaff;
+
+    margin-bottom:18px;
+}
+
+h1,
+h2{
+    font-family:'Playfair Display',serif;
+}
+
+.hero h1{
+
+    font-size:
+        clamp(
+            48px,
+            11vw,
+            100px
+        );
+
+    line-height:.95;
+
+    margin-bottom:22px;
+
+    text-shadow:
+        0 0 35px #b78cff55;
+}
+
+.hero h1 span{
+    color:#ffc5e4;
+}
+
+.subtitle{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#cbd3eb;
+
+    line-height:1.8;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.cta{
+
+    margin-top:32px;
+
+    padding:15px 25px;
+
+    border-radius:999px;
+
+    color:#171126;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd6ea,
+            #c9c6ff
+        );
+
+    font-weight:700;
+
+    box-shadow:
+        0 10px 35px #a69cff35;
+
+    transition:.3s;
+}
+
+.cta:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+}
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope-wrap{
+
+    margin:40px auto 0;
+
+    width:130px;
+    height:90px;
+
+    position:relative;
+
+    cursor:pointer;
+}
+
+.envelope{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#f5d9e9;
+
+    border-radius:9px;
+
+    box-shadow:
+        0 15px 40px #0007;
+}
+
+.envelope:before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    border-left:
+        65px solid transparent;
+
+    border-right:
+        65px solid transparent;
+
+    border-top:
+        48px solid #dba9c8;
+
+    transform-origin:top;
+
+    transition:.7s;
+
+    z-index:2;
+}
+
+.envelope:after{
+
+    content:"♥";
+
+    position:absolute;
+
+    left:54px;
+    top:31px;
+
+    color:#9a477c;
+
+    font-size:22px;
+
+    z-index:3;
+}
+
+.envelope-wrap.open
+.envelope:before{
+
+    transform:
+        rotateX(180deg);
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    width:min(100%,900px);
+
+    padding:48px;
+
+    border:
+        1px solid #ffffff18;
+
+    border-radius:30px;
+
+    background:#ffffff0b;
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:
+        0 25px 80px #0004;
+}
+
+.section-title{
+
+    font-size:
+        clamp(
+            36px,
+            7vw,
+            62px
+        );
+
+    margin-bottom:15px;
+}
+
+.section-desc{
+
+    color:#bfc7dd;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter{
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffafc,
+            #f4efff
+        );
+
+    color:#333;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 20px 50px #0004;
+
+    line-height:1.9;
+
+    position:relative;
+}
+
+.letter:before{
+
+    content:"O";
+
+    position:absolute;
+
+    right:25px;
+    top:10px;
+
+    font:
+        700 90px
+        'Playfair Display';
+
+    color:#9c78bb12;
+}
+
+.letter p{
+
+    margin-bottom:15px;
+}
+
+.signature{
+
+    font-family:
+        'Playfair Display';
+
+    font-size:24px;
+
+    color:#7e568d;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:18px;
+}
+
+.photo{
+
+    height:430px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    position:relative;
+
+    border:
+        1px solid #fff2;
+
+    box-shadow:
+        0 20px 50px #0005;
+}
+
+.photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s;
+}
+
+.photo:hover img{
+
+    transform:scale(1.06);
+}
+
+.caption{
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+    right:0;
+
+    padding:24px 20px;
+
+    background:
+        linear-gradient(
+            transparent,
+            #000b
+        );
+
+    font-size:14px;
+}
+
+.memory-note{
+
+    margin-top:22px;
+
+    text-align:center;
+
+    color:#c5cce0;
+
+    font-size:14px;
+}
+
+/* =========================
+   GIFT
+========================= */
+
+.gift-area{
+
+    text-align:center;
+}
+
+.gift{
+
+    font-size:115px;
+
+    filter:
+        drop-shadow(
+            0 20px 20px #0005
+        );
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.gift:hover{
+
+    transform:
+        scale(1.08)
+        rotate(-3deg);
+}
+
+.hidden-message{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:1s;
+
+    margin:auto;
+
+    max-width:650px;
+}
+
+.hidden-message.show{
+
+    max-height:300px;
+
+    margin-top:25px;
+}
+
+.mini-card{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#ffffff10;
+
+    border:
+        1px solid #fff2;
+
+    color:#dce2f5;
+
+    line-height:1.8;
+}
+
+/* =========================
+   GAME
+========================= */
+
+.game{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.score{
+
+    font-size:18px;
+
+    color:#ffd6ec;
+
+    margin-bottom:15px;
+}
+
+.balloon-area{
+
+    width:100%;
+
+    height:360px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:#ffffff06;
+
+    border:
+        1px solid #fff1;
+}
+
+.balloon{
+
+    position:absolute;
+
+    font-size:48px;
+
+    cursor:pointer;
+
+    animation:
+        float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    50%{
+        transform:
+            translateY(-15px)
+            rotate(5deg);
+    }
+
+}
+
+.pop{
+
+    animation:
+        pop .35s forwards!important;
+}
+
+@keyframes pop{
+
+    to{
+
+        transform:scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
+
+/* =========================
+   CAKE
+========================= */
+
+.cake{
+
+    font-size:120px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    filter:
+        drop-shadow(
+            0 20px 25px #0005
+        );
+}
+
+.cake:hover{
+
+    transform:
+        translateY(-8px);
+}
+
+.wish{
+
+    color:#cfd6ea;
+
+    max-width:620px;
+
+    text-align:center;
+
+    line-height:1.8;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #4c2a61 0,
+            #0b0d20 55%,
+            #080b1b 100%
+        );
+}
+
+.final h2{
+
+    font-size:
+        clamp(
+            48px,
+            9vw,
+            90px
+        );
+
+    color:#ffd2e8;
+}
+
+.final p{
+
+    max-width:700px;
+
+    color:#d7dbea;
+
+    line-height:1.9;
+
+    margin:20px auto;
+}
+
+.footer{
+
+    position:absolute;
+
+    bottom:25px;
+
+    font-size:11px;
+
+    color:#929ab2;
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    width:8px;
+    height:13px;
+
+    z-index:30;
+
+    animation:
+        confettiFall 4s linear forwards;
+}
+
+@keyframes confettiFall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* =========================
+   REVEAL
+========================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+        translateY(35px);
+
+    transition:1s;
+}
+
+.reveal.visible{
+
+    opacity:1;
+
+    transform:none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .card{
+
+        padding:28px 18px;
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+    }
+
+    .photo{
+
+        height:390px;
+    }
+
+    .nav{
+
+        font-size:10px;
+
+        white-space:nowrap;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- BACKGROUND -->
+
+<div class="bg"></div>
+
+<div class="stars" id="stars"></div>
+
+
+<!-- NAV -->
+
+<div class="nav">
+
+    Ola's Birthday •
+    8 years & counting ♡
+
+</div>
+
+
+
+<!-- =========================
+     PAGE 1
+========================= -->
+
+<section class="hero">
+
+<div>
+
+    <div class="kicker">
+
+        a little website made with love
+
+    </div>
+
+
+    <h1>
+
+        Happy Birthday,
+
+        <br>
+
+        <span>Ola ✨</span>
+
+    </h1>
+
+
+    <p class="subtitle">
+
+        For someone who has been part
+        of my life for 8 years —
+
+        and somehow,
+
+        still hasn't gotten tired of me.
+
+        WKWKWK.
+
+    </p>
+
+
+    <!-- ENVELOPE -->
+
+    <div
+        class="envelope-wrap"
+        id="envelope"
+        onclick="openEnvelope()"
+    >
+
+        <div class="envelope"></div>
+
+    </div>
+
+
+    <p
+        style="
+        margin-top:14px;
+        font-size:12px;
+        color:#aeb7d0
+        "
+    >
+
+        tap the envelope ♡
+
+    </p>
+
+
+    <button
+        class="cta"
+        onclick="
+        document
+        .getElementById('letter')
+        .scrollIntoView()
+        "
+    >
+
+        open your surprise ↓
+
+    </button>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     LETTER
+========================= -->
+
+<section id="letter">
+
+<div class="card reveal">
+
+
+    <div class="kicker">
+
+        a letter for my favorite human
+
+    </div>
+
+
+    <h2 class="section-title">
+
+        Dear Ola, 💌
+
+    </h2>
+
+
+    <p class="section-desc">
+
+        Okay, this is officially your
+        birthday corner.
+
+        So pls read this sampe habis,
+        no skipping hehe.
+
+    </p>
+
+
+    <div class="letter">
+
+
+        <p>
+
+            Happy birthday, Sayang! 🎂💗
+
+        </p>
+
+
+        <p>
+
+            Already 20 yo YEAY!!!.
+
+            <i>Happiest birthday cinta.</i>
+
+            Selamat menginjak kepala 2,
+            hwhw udah serius banget yh kehidupan...
+            But hopefully kehidupan u dikelilingi banyak hal baik.
+
+            Jangan lupa makan enak!
+            Jangan lupa juga self reward!
+            Jangan lupa senyummm hari ini!
+            Jangan lupa bahagia juga yaa!
+
+        </p>
+
+
+        <p>
+
+            Thank u for being there through
+            all the random stories, silly
+            moments, bad days, good days,
+            and all the little things in between hwhw.
+
+            There are sooo many things yang mungkin nggak
+            kita sadari, dan tiba2 udah 8 tahun aja
+            But turns out hal-hal kecil itu yang bikin
+            friendship kita jadi jadi lucuk.
+
+        </p>
+
+
+        <p>
+
+            I hope this new chapter of ur
+            life brings u lots of happiness,
+            good people, exciting experiences,
+            and dreams that slowly become reality.
+
+            Semoga u selalu punya alasan
+            buat senyum, punya keberanian
+            buat mencoba hal baru, dan punya
+            tempat untuk pulang.
+
+        </p>
+
+
+        <p>
+
+            And please remember:
+
+            u don't have to have everything
+            figured out right now.
+
+            Take ur time.
+
+            Grow at ur own pace.
+
+            <b>
+                u are doing better than
+                u think.
+            </b>
+
+            🌷
+
+        </p>
+
+
+        <p>
+
+            Here's to more random conversations,
+            more laughter, more memories,
+
+            and hopefully many more years
+            of this friendship.
+
+        </p>
+
+
+        <p>
+
+            Happy birthday once again, Cinta.
+
+            Stay happy, stay kind,
+            stay wonderfully u. ♡
+
+        </p>
+
+
+        <p class="signature">
+
+            With love,
+
+            <br>
+
+            ur friend who somehow survived
+            8 years with u 🤍
+
+        </p>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+    <div class="memory-note">
+
+        If friendship had an archive,
+        ours would probably be 90% chaos
+        and 10% wholesome moments.
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     GIFT
+========================= -->
+
+<section>
+
+<div class="card reveal gift-area">
+
+
+    <div class="kicker">
+
+        there's something hidden here
+
+    </div>
+
+
+    <h2 class="section-title">
+
+        A little gift 🎁
+
+    </h2>
+
+
+    <p class="section-desc">
+
+        Click the gift.
+
+
+    </p>
+
+
+    <div
+        class="gift"
+        onclick="openGift()"
+    >
+
+        🎁
+
+    </div>
+
+
+    <div
+        class="hidden-message"
+        id="giftMsg"
+    >
+
+        <div class="mini-card">
+
+
+            <b>
+                ✨ Your secret birthday note ✨
+            </b>
+
+
+            <br><br>
+
+
+            If I could give u one thing
+            for this year, it would be the
+            ability to see urself the way
+            the people who love u see you:
+
+            precious, capable, funny,
+            and worth celebrating.
+
+
+            <br><br>
+
+
+            So today, please celebrate
+            urself a little more.
+
+            You deserve it. 💗
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     MINI GAME
+========================= -->
+
+<section>
+
+<div class="card reveal game">
+
+
+    <div class="kicker">
+
+        birthday mini game
+
+    </div>
+
+
+    <h2 class="section-title">
+
+        Pop the balloons 🎈
+
+    </h2>
+
+
+    <p class="section-desc">
+
+        Pop <b>8 balloons</b> —
+
+        because 8 years of friendship
+        deserves at least 8 tiny celebrations.
+
+    </p>
+
+
+    <div class="score">
+
+        Balloons popped:
+
+        <span id="score">
+            0
+        </span>
+
+        / 8
+
+    </div>
+
+
+    <div
+        class="balloon-area"
+        id="balloonArea"
+    >
+
+    </div>
+
+
+    <p
+        id="gameText"
+        style="
+        margin-top:18px;
+        color:#aeb7d0;
+        font-size:13px
+        "
+    >
+
+        Go go go! Click them! 🎈
+
+    </p>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     WISH
+========================= -->
+
+<section>
+
+<div
+    class="card reveal"
+    style="text-align:center"
+>
+
+
+    <div class="kicker">
+
+        make a wish
+
+    </div>
+
+
+    <h2 class="section-title">
+
+        One more thing… 🎂
+
+    </h2>
+
+
+    <p class="wish">
+
+        Close your eyes,
+        make a wish,
+        and click the cake
+        when you're ready.
+
+        May this year be gentle with you
+        and full of beautiful surprises.
+
+    </p>
+
+
+    <div
+        class="cake"
+        onclick="makeWish()"
+    >
+
+        🎂
+
+    </div>
+
+
+    <p
+        id="wishText"
+        style="
+        color:#ffcce5;
+        font-weight:600;
+        min-height:28px
+        "
+    >
+
+    </p>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section
+    class="final"
+    id="final"
+>
+
+<div class="reveal">
+
+
+    <div class="kicker">
+
+        and finally...
+
+    </div>
+
+
+    <h2>
+
+        Happy Birthday,
+
+        <br>
+
+        Sayang! 🎉
+
+    </h2>
+
+
+    <p>
+
+        Thank you for being part
+        of my story for the past
+        8 years.
+
+        Here's to everything we've
+        been through, everything
+        we're becoming, and all the
+        memories we haven't made yet.
+
+    </p>
+
+
+    <p>
+
+        <b>
+
+            8 years down.
+
+            Hopefully, many many
+            more to go. 🤍
+
+        </b>
+
+    </p>
+
+
+    <button
+        class="cta"
+        onclick="celebrate()"
+    >
+
+        CELEBRATE! 🎊
+
+    </button>
+
+
+</div>
+
+
+<div class="footer">
+
+    made especially for Ola
+    • with lots of love ♡
+
+</div>
+
+
+</section>
+
+
+
+<script>
+
+/* =========================
+   CREATE STARS
+========================= */
+
+const stars =
+    document.getElementById("stars");
+
+
+for(let i = 0; i < 100; i++){
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+
+    star.style.opacity =
+        Math.random();
+
+
+    stars.appendChild(star);
+
+}
+
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+
+                    entry.target
+                        .classList
+                        .add("visible");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold:.15
+        }
+
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(element => {
+
+        observer.observe(element);
+
+    });
+
+
+
+/* =========================
+   ENVELOPE
+========================= */
+
+function openEnvelope(){
+
+    document
+        .getElementById("envelope")
+        .classList
+        .toggle("open");
+
+
+    setTimeout(() => {
+
+        document
+            .getElementById("letter")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+    },700);
+
+}
+
+
+
+/* =========================
+   GIFT
+========================= */
+
+function openGift(){
+
+    document
+        .getElementById("giftMsg")
+        .classList
+        .toggle("show");
+
+}
+
+
+
+/* =========================
+   BALLOON GAME
+========================= */
+
+let score = 0;
+
+
+function spawnBalloon(){
+
+    const area =
+        document
+        .getElementById("balloonArea");
+
+
+    const balloon =
+        document.createElement("div");
+
+
+    balloon.className =
+        "balloon";
+
+
+    balloon.textContent =
+        "🎈";
+
+
+    balloon.style.left =
+        (5 + Math.random()*85) + "%";
+
+
+    balloon.style.top =
+        (8 + Math.random()*78) + "%";
+
+
+    balloon.style.animationDelay =
+        Math.random() + "s";
+
+
+    balloon.onclick = function(){
+
+        if(
+            balloon
+            .classList
+            .contains("pop")
+        ){
+
+            return;
+
+        }
+
+
+        balloon
+            .classList
+            .add("pop");
+
+
+        score++;
+
+
+        document
+            .getElementById("score")
+            .textContent = score;
+
+
+        if(score >= 8){
+
+            document
+                .getElementById("gameText")
+                .textContent =
+                "YOU DID IT! 8 balloons for 8 wonderful years! 🎉";
+
+
+            setTimeout(
+                celebrate,
+                400
+            );
+
+        }
+
+        else{
+
+            spawnBalloon();
+
+        }
+
+
+        setTimeout(
+            () => balloon.remove(),
+            350
+        );
+
+    };
+
+
+    area.appendChild(balloon);
+
+}
+
+
+/* 8 balloon awal */
+
+for(
+    let i = 0;
+    i < 8;
+    i++
+){
+
+    spawnBalloon();
+
+}
+
+
+
+/* =========================
+   MAKE A WISH
+========================= */
+
+function makeWish(){
+
+    document
+        .getElementById("wishText")
+        .textContent =
+        "✨ Wish sent to the universe! ✨";
+
+
+    confetti(45);
+
+}
+
+
+
+/* =========================
+   CELEBRATION
+========================= */
+
+function celebrate(){
+
+    confetti(120);
+
+
+    document
+        .getElementById("final")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function confetti(number){
+
+    for(
+        let i = 0;
+        i < number;
+        i++
+    ){
+
+        const piece =
+            document.createElement("div");
+
+
+        piece.className =
+            "confetti";
+
+
+        piece.textContent =
+            [
+                "✦",
+                "●",
+                "♥",
+                "◆",
+                "✧"
+            ][
+                Math.floor(
+                    Math.random()*5
+                )
+            ];
+
+
+        piece.style.left =
+            Math.random()*100 + "vw";
+
+
+        piece.style.fontSize =
+            (8 + Math.random()*14) + "px";
+
+
+        piece.style.animationDuration =
+            (2.5 + Math.random()*3) + "s";
+
+
+        piece.style.animationDelay =
+            Math.random()*.7 + "s";
+
+
+        document
+            .body
+            .appendChild(piece);
+
+
+        setTimeout(
+            () => piece.remove(),
+            6000
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
